@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?android:attr/colorBackground">
+    android:background="?attr/colorSurface"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,15 +19,13 @@
             android:text="Pengaturan"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:textColor="?attr/colorOnSurface" />
 
         <!-- Theme Settings -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_margin="16dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp">
 
@@ -42,20 +41,20 @@
                     android:text="Tema Aplikasi"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="?attr/colorOnSurface" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_dark_mode"
-                        app:tint="?android:attr/textColorSecondary" />
+                        app:tint="?attr/colorOnSurfaceVariant" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -69,14 +68,14 @@
                             android:layout_height="wrap_content"
                             android:text="Mode Gelap"
                             android:textSize="16sp"
-                            android:textColor="?android:attr/textColorPrimary" />
+                            android:textColor="?attr/colorOnSurface" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Mengubah tampilan aplikasi menjadi gelap"
                             android:textSize="12sp"
-                            android:textColor="?android:attr/textColorSecondary" />
+                            android:textColor="?attr/colorOnSurfaceVariant" />
 
                     </LinearLayout>
 
@@ -84,8 +83,8 @@
                         android:id="@+id/switchTheme"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:thumbTint="@color/colorAccent"
-                        android:trackTint="@color/colorPrimary"/>
+                        android:thumbTint="?attr/colorPrimary"
+                        android:trackTint="?attr/colorPrimary" />
 
                 </LinearLayout>
 
@@ -124,11 +123,11 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="48dp"-->
-<!--                        android:layout_height="48dp"-->
-<!--                        android:src="@drawable/ic_app_logo"-->
-<!--                        android:background="@drawable/bg_circle_primary" />-->
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="48dp"-->
+                    <!--                        android:layout_height="48dp"-->
+                    <!--                        android:src="@drawable/ic_app_logo"-->
+                    <!--                        android:background="@drawable/bg_circle_primary" />-->
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -140,7 +139,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Menu Makanan App"
+                            android:text="Dylicious"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="?android:attr/textColorPrimary" />
@@ -164,29 +163,6 @@
 
                 </LinearLayout>
 
-                <!-- Additional Info -->
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="?android:attr/textColorSecondary"
-                    android:alpha="0.3" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Developer: Tim Pengembang"
-                    android:textSize="12sp"
-                    android:textColor="?android:attr/textColorSecondary" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Email: support@menumakanan.com"
-                    android:textSize="12sp"
-                    android:textColor="?android:attr/textColorSecondary" />
 
             </LinearLayout>
 

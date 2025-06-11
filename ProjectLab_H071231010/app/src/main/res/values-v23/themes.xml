@@ -4,7 +4,6 @@
         <item name="colorPrimary">@color/primary_light</item>
         <item name="colorOnPrimary">@color/on_primary_light</item>
         <item name="android:windowBackground">?attr/colorSurface</item>
-        <item name="colorOnSurface">@color/white</item>
         <!-- dst… -->
     </style>
 </resources>

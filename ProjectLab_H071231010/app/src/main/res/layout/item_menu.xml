@@ -80,16 +80,6 @@
 
         </LinearLayout>
 
-        <!-- Favorite Button -->
-        <ImageButton
-            android:id="@+id/btnFavorite"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="top"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_favorite_border"
-            android:contentDescription="Add to Favorite"
-            app:tint="@color/colorAccent" />
 
     </LinearLayout>
 
